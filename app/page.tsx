@@ -1,11 +1,21 @@
-import { Button } from "@/components/ui/button";
+import CompanionCard from "@/components/CompanionCard";
+import CompanionsList from "@/components/CompanionsList";
+import CTA from "@/components/CTA";
 import React from "react";
 
 const Page = () => {
   return (
     <div>
-      <h1 className="text-2xl text-red-900">here</h1>
-      <Button>talk to me</Button>
+      <h1 className="text-2xl text-primary">Popular Companions</h1>
+      <section className="home-section">
+        <CompanionCard />
+        <CompanionCard />
+        <CompanionCard />
+      </section>
+      <section className="home-section">
+        <CompanionsList />
+        <CTA />
+      </section>
     </div>
   );
 };
