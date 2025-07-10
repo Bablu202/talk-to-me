@@ -4,12 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
-const navs = [
-  { label: "Home", href: "/" },
-  { label: "Companions", href: "/companions" },
-  { label: "My Journey", href: "/my-journey" },
-];
-
 const NavItems = () => {
   const pathname = usePathname();
   return (
@@ -28,3 +22,9 @@ const NavItems = () => {
 };
 
 export default NavItems;
+
+const navs = [
+  { label: "Home", href: "/" },
+  { label: "Companions", href: "/companions" },
+  { label: "My Journey", href: "/my-journey" },
+];
