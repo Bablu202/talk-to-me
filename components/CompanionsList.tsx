@@ -16,7 +16,7 @@ interface CompanionsListProps {
   classNames?: string;
 }
 const CompanionsList = ({
-  title,
+  //  title,
   companions,
   classNames,
 }: CompanionsListProps) => {
