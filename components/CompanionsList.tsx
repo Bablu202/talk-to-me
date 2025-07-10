@@ -2,7 +2,6 @@ import React from "react";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -58,7 +57,10 @@ const CompanionsList = ({
                 </Link>
               </TableCell>
               <TableCell>
-                <div className="subject-badge w-fit max-md:hidden">
+                <div
+                  className="subject-badge w-fit max-md:hidden text-black"
+                  style={{ backgroundColor: getSubjectColor(subject) }}
+                >
                   {subject}
                 </div>
                 <div
